@@ -32,11 +32,11 @@ allprojects {
 
 
 //config for android specific libs
-//configure(subprojects.findAll {it.name != 'reduks-core' && it.name != 'zjsonpatch'}) {
+//configure(subprojects.findAll {it.name != 'reduks-core' && it.name != 'kjsonpatch'}) {
 //
 //}
 //config for java specific libs
-//configure(subprojects.findAll {it.name == 'reduks-core' || it.name == 'zjsonpatch'}) {
+//configure(subprojects.findAll {it.name == 'reduks-core' || it.name == 'kjsonpatch'}) {
 //
 //}
 subprojects {
