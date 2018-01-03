@@ -24,7 +24,7 @@ class ApplyProcessor(target: JsonElement) : JsonPatchProcessor {
     private var target: JsonElement
 
     init {
-        this.target = target.publicDeepCopy()
+        this.target = target.deepCopy()
     }
 
     fun result(): JsonElement {

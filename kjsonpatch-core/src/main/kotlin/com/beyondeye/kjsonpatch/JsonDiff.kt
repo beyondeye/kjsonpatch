@@ -19,7 +19,6 @@ package com.beyondeye.kjsonpatch
 import com.google.gson.JsonArray
 import com.google.gson.JsonElement
 import com.google.gson.JsonObject
-import com.google.gson.publicDeepCopy
 
 
 import java.util.*
@@ -349,7 +348,7 @@ object JsonDiff {
         while (targetIdx < targetSize) {
             val jsonNode = target.get(targetIdx)
             val currPath = getPath(path, pos)
-            diffs.add(Diff.generateDiff(op.ADD, currPath, jsonNode.publicDeepCopy()))
+            diffs.add(Diff.generateDiff(op.ADD, currPath, jsonNode.deepCopy()))
             pos++
             targetIdx++
         }
