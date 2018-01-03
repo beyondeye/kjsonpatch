@@ -1,4 +1,4 @@
-[![Kotlin 1.2.10](https://img.shields.io/badge/Kotlin-1.1.1-blue.svg)](http://kotlinlang.org)
+[![Kotlin 1.2.10](https://img.shields.io/badge/Kotlin-1.2.10-blue.svg)](http://kotlinlang.org)
 [![](https://jitpack.io/v/beyondeye/kjsonpatch.svg)](https://jitpack.io/#beyondeye/kjsonpatch)
 [![Build Status](https://travis-ci.org/beyondeye/kjsonpatch.svg?branch=master)](https://travis-ci.org/beyondeye/kjsonpatch)
 # KJsonPatch: a JSonPatch implementation in kotlin
