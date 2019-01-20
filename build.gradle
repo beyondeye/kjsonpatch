@@ -1,6 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
     repositories {
+        google()
         mavenCentral()
         jcenter()
         maven {
@@ -9,7 +10,7 @@ buildscript {
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath 'com.android.tools.build:gradle:2.3.1'
+        classpath 'com.android.tools.build:gradle:3.3.0'
         classpath "com.github.dcendents:android-maven-gradle-plugin:$dcendents_maven_plugin_version"
 
     }
@@ -21,7 +22,7 @@ allprojects {
     }
     //COMMON BUILD TOOL AND SDK VERSION FOR ALL MODULES
     ext {
-        VERSION_NAME='0.3.20-SNAPSHOT' //version for kjsonpatch correspond to original ported version of zjsonpatch
+        VERSION_NAME='0.3.21-SNAPSHOT' //version for kjsonpatch correspond to original ported version of zjsonpatch
         POM_NAME='KJsonPatch: an implementation of RFC 6902 JSON Patch written in Kotlin '
         GROUP_MAVEN_PUSH= 'com.github.beyondeye.kjsonpatch' //used by maven-push: MAKE SURE THAT THIS MATCHES group DEFINED BELOW IN THIS FILE AND USED BY JITPACK
         sourceCompatibility_ = 1.6 //I want this library to be linkable from android projects
@@ -75,5 +76,5 @@ task clean(type: Delete) {
 
 //task for updating gradle
 task wrapper(type: Wrapper) {
-    gradleVersion = '4.4.1'
+    gradleVersion = '4.10.1'
 }
