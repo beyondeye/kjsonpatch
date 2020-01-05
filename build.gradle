@@ -10,7 +10,7 @@ buildscript {
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-        classpath 'com.android.tools.build:gradle:3.3.0'
+        classpath 'com.android.tools.build:gradle:3.5.3'
         classpath "com.github.dcendents:android-maven-gradle-plugin:$dcendents_maven_plugin_version"
 
     }
@@ -39,6 +39,8 @@ allprojects {
 //configure(subprojects.findAll {it.name == 'reduks-core' || it.name == 'kjsonpatch'}) {
 //
 //}
+
+
 subprojects {
     repositories {
         mavenCentral()
@@ -49,6 +51,7 @@ subprojects {
 
     sourceCompatibility = sourceCompatibility_ //I want this library to be linkable from android projects
     targetCompatibility = targetCompatibility_ //I want this library to be linkable from android projects
+
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
